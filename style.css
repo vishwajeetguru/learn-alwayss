@@ -38,11 +38,10 @@
   margin-left: 10px;
 
 }
-.conus{
-  width: 20px;
 }
+.modal-body {
+  background-image: url('contact us.svg');
+
 }
-.conus{
-  width: 400px;
-}
+
 /*<!-- ---------------------------------------Hero Section End----------------------------------- -->*/
