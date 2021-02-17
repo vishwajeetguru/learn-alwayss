@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  
+}
 
 /*------------------------------------------------------------------------------------------*/
 /*<!-- ---------------------------------------Navbar----------------------------------- -->*/
@@ -44,4 +46,137 @@
 
 /*<!-- ---------------------------------------Hero Section End----------------------------------- -->*/
 
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+.tabbing{
+  font-family: 'Arimo', sans-serif;
+  margin-top: 200px;
+}
+h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:20px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:500px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+  margin-bottom: 20px;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+/*====================================================================*/
+/*-------------------------------Video Button---------------------*/
+.leftvi{
+  margin-top: 300px;
+}
 
+.vdbtn{
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: rgb(255,122,0);
+  color: #fff;
+  border-radius: 40px;
+  font-family: 'Century Gothic';
+  font-weight: bolder;
+  box-shadow: 0 10px 40px rgba(255,122,0,0.4);
+  margin-left: 100px;
+}
+
+.video-container{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 99999;
+  background-color: rgba(255,122,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.video-container .close{
+  position: absolute;
+  top: 10px; right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.video-container video{
+  width: 90%;
+  max-width: 800px;
+  transform: scale(0);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.video-container.show{
+  pointer-events: all; opacity: 1;
+}
+
+.video-container.show video{ transform: scale(1); }
+
+
+@media (min-width: 992px){
+.video-container video{
+  width: 50%;
+  max-width: 800px;
+  transform: scale(0);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+  outline: none;
+  transition: all 0.3s;
+}
+}
