@@ -180,7 +180,16 @@ h2{
   transition: all 0.3s;
 }
 }
-/*--------------------------------*/
+/*------------------Video button end--------------*/
+/*--------------Feed------------------*/
 .lahead{
   padding-top: 200px;
 }
+
+@media (max-width: 768px){
+.leftfee{
+  width: 300px;
+  height: 300px;
+}
+}
+/*--------------Feed end------------------*/
