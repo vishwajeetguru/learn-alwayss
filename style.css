@@ -29,22 +29,9 @@ body{
   width: 60px;
 }
 }
-/*<!-- ---------------------------------------Navbar End----------------------------------- -->*/
-/*<!-- ---------------------------------------Hero Section----------------------------------- -->*/
+/*<!-- ---------------------------------------Navbar End------------------------------------->*/
 
-.hero-image-svg{
-  width: 400px;
-
-}
-@media (max-width: 768px){
-.hero-image-svg{
-  width: 300px;
-  margin-left: 10px;
-
-}
-}
-
-/*<!-- ---------------------------------------Hero Section End----------------------------------- -->*/
+/*----------------------------------------------tab-----------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
 .tabbing{
@@ -115,81 +102,21 @@ h2{
   color:#000;
   border-top: 3px solid #000;
 }
-/*====================================================================*/
-/*-------------------------------Video Button---------------------*/
-.leftvi{
-  margin-top: 300px;
+/*=================================tab end===================================*/
+
+/*=================================pp===================================*/    
+      .pic{
+            box-shadow: 0 2rem 2rem #00000080;
+      }
+      .pp{
+            box-shadow: 0 2rem 2rem #00000080;
+      }
+     
+.table tr:hover
+{
+  background-color: #6c757d;
+  color: white;
 }
 
-.vdbtn{
-  text-decoration: none;
-  padding: 15px 40px;
-  background-color: rgb(255,122,0);
-  color: #fff;
-  border-radius: 40px;
-  font-family: 'Century Gothic';
-  font-weight: bolder;
-  box-shadow: 0 10px 40px rgba(255,122,0,0.4);
-  margin-left: 90px;
-}
 
-.video-container{
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 99999;
-  background-color: rgba(255,122,0,0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s;
-}
-
-.video-container .close{
-  position: absolute;
-  top: 10px; right: 25px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.video-container video{
-  width: 90%;
-  max-width: 800px;
-  transform: scale(0);
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
-  outline: none;
-  transition: all 0.3s;
-}
-
-.video-container.show{
-  pointer-events: all; opacity: 1;
-}
-
-.video-container.show video{ transform: scale(1); }
-
-
-@media (min-width: 992px){
-.video-container video{
-  width: 50%;
-  max-width: 800px;
-  transform: scale(0);
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
-  outline: none;
-  transition: all 0.3s;
-}
-}
-/*------------------Video button end--------------*/
-/*--------------Feed------------------*/
-.lahead{
-  padding-top: 200px;
-}
-
-@media (max-width: 768px){
-.leftfee{
-  width: 300px;
-  height: 300px;
-}
-}
-/*--------------Feed end------------------*/
+  /*=================================ppend===================================*/
