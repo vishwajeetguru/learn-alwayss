@@ -1,0 +1,144 @@
+/*------------------------------------------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+
+.tytext {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em 2em;
+  font-size: 10px;
+ 	
+}
+
+h1{
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+ 	
+
+
+/*<!-- ---------------------------------------Navbar----------------------------------- -->*/
+.navbar{
+
+}
+
+@media (min-width: 992px){
+  .navfix{
+    height: 80px;
+
+  }
+  .logosvg{
+    width: 130px;
+    margin-top: 10px; 
+    margin-left: 0px;
+  }
+  .navbar-brand{
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 768px){
+.logosvg{
+  width: 60px;
+}
+}
+/*<!-- ---------------------------------------Navbar End------------------------------------->*/
+
+/*----------------------------------------------tab-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+.tabbing{
+  font-family: 'Arimo', sans-serif;
+  margin-top: 200px;
+}
+h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:20px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:500px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+  margin-bottom: 20px;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+/*=================================tab end===================================*/
+
+/*=================================pp===================================*/    
+      .pic{
+            box-shadow: 0 2rem 2rem #00000080;
+      }
+      .pp{
+            box-shadow: 0 2rem 2rem #00000080;
+      }
+     
+.table tr:hover
+{
+  background-color: #6c757d;
+  color: white;
+}
+
+
+  /*=================================ppend===================================*/
+  
