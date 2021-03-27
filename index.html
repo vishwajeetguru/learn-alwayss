@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <title>Learn Alwayss</title>
   </head>
   <body>
@@ -47,7 +48,7 @@ window.fbAsyncInit = function() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="topic.html">Topics</a>
@@ -56,10 +57,10 @@ window.fbAsyncInit = function() {
           <a class="nav-link" href="source.html">Souce Code</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="about.html">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
         
       </ul>
@@ -283,13 +284,125 @@ window.fbAsyncInit = function() {
         </div>
     </section>
 
-<!-- ---------------------------------------Tabbed------------------------------------------- -->
-  
+<!-- ---------------------------------------Footer------------------------------------------ -->
 
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="source.html"><i class="fa fa-angle-double-right"></i>Source Code</a></li>
+						<li><a href="topic.html"><i class="fa fa-angle-double-right"></i>Topics</a></li>
+						<li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5 class="linedash">Important Links</h5>
+					<ul class="list-unstyled quick-links">
+						<li>  <button class="button" data-modal="modalsub">
+              Subscribe Us
+            </button></li>
+						<li>  <button class="button" data-modal="modallocate">
+              Locate Us
+            </button></li>
+						<li><a href="certificate/index.html"><button class="button" >
+              Get Free Certificate
+            </button></a></li>
+						<li> <a href="vishwajeet.html"><button class="button" >
+              Portfolio
+            </button></a></li>
+						<li> <button class="button" data-modal="modalweb">
+              Learn Web Development
+            </button></li>
+					</ul>
+				</div>
+			
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a target="_blank" href="https://m.facebook.com/learnalwayss/"><img src="https://img.icons8.com/doodle/50/000000/facebook-new.png"/></a></li>
+						<li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/learn_alwayss/?igshid=yeopfj5kyx1l"><img src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a></li>
+						<li class="list-inline-item"><a target="_blank" href="https://www.youtube.com/channel/UCdCY5SkSRQ_LbxKWXDszY9Q"><img src="https://img.icons8.com/doodle/48/000000/youtube.png"/></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/vishwajeetguru/" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"/></a></li>
+						<li class="list-inline-item"><a href="https://t.me/learn_alwayss" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/telegram-app.png"/></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6 pb-2">©Copyright 2021 - Made By <a target="blank" href="https://www.instagram.com/vishwa__guru/">Vishwajeet Guru</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+
+<!-- --------modal-------- -->
+<div id="modalsub" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-danger">Send</button>
+    </div>
+  </div>
+</div>
+
+<div id="modalcerti" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      <h2>Ask A Question</h2><br>
+    </div>
+  </div>
+</div>
+
+
+<div id="modallocate" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      
+    </div>
+  </div>
+</div>
+<div id="modalport" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      <h2>Ask A Question</h2><br>
+    </div>
+  </div>
+</div>
+<div id="modalweb" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+    </div>
+  </div>
+</div>
+<!-- --------modal end-------- -->
+
+
+	<!------------------------Footer ---------------------->
 
     <!-- Typed js -->
     <script type="text/javascript" src="type.js"></script>
-
+    <script src="footer.js"></script>
+   
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
